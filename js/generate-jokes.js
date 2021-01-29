@@ -1,13 +1,13 @@
-import { My_API_Key } from './config.js';
+
 
 var outputDiv = document.querySelector('#output');
 var genButton = document.querySelector('#generate');
 
 function getJokes() {
-fetch("https://joke3.p.rapidapi.com/v1/joke?nsfw=true", {
+fetch("https://joke3.p.rapidapi.com/v1/joke?nsfw=false", {
 	"method": "GET",
 	"headers": {
-		"x-rapidapi-key": "My_API_Key",
+		"x-rapidapi-key": "",
 		"x-rapidapi-host": "joke3.p.rapidapi.com"
 	}
 })
