@@ -1,21 +1,18 @@
-import { My_API_Key } from './config.js';
+
 
 var outputDiv = document.querySelector('#output');
 var genButton = document.querySelector('#generate');
 
+var apiUrl = "https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw&type=single";
+
 function getJokes() {
-fetch("https://joke3.p.rapidapi.com/v1/joke?nsfw=true", {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-key": "My_API_Key",
-		"x-rapidapi-host": "joke3.p.rapidapi.com"
-	}
-})
+fetch(apiUrl)
+
 .then(response => response.json())
 .then(response => {
-	var outputText = response.content;
+	var outputText = response.joke;
 	outputDiv.innerText = outputText;
-	console.log ("content", response);
+	console.log ("joke", response);
 })
 .catch(err => {
 	console.error(err);
