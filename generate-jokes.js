@@ -1,5 +1,3 @@
-
-
 var outputDiv = document.querySelector('#output');
 var genButton = document.querySelector('#generate');
 
