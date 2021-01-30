@@ -2,7 +2,7 @@
 body {
     font-family: 'Yusei Magic', sans-serif;
     background: url("image/devin-avery-xbuEndq7fLw-unsplash.jpg");
-    background-size: 100%;
+    background-size:100%;
     }
 
 #output {
@@ -10,7 +10,7 @@ body {
     margin: 1rem;
     padding: 1rem;
     border: 4px solid  rgb(235, 168, 168);
-    height: 200px;
+    height: 300px;
     background-color:#371A1E;
     color: crimson;
 }
